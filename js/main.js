@@ -56,7 +56,7 @@ function myFunction(){
         document.querySelector('.tekst3').textContent = 'Utwór: ' + fin.link;
         document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + fin.miasto;
         document.querySelector('.tekst5').textContent = 'Data urodzenia: ' + fin.data_urodzenia;
-        document.querySelector('.tekst6').textContent = 'Fakty: ' + fin.historia;//to chyba niepotrzebne
+        document.querySelector('.tekst6').textContent = 'Fakty: ' + fin.historia;
     }
     else{
         
