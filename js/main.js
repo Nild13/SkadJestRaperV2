@@ -22,6 +22,32 @@ function myFunction(){
     let imagine = document.querySelector('.divv');
     imagine.innerHTML = fin.zdjecie;
     //wszystkie musza się za każdym razem generować, bo inaczej znikaja dane po wpisaniu czegos czego nie ma lub błędnie
+        let createFirstDiv = document.createElement('div');
+        createFirstDiv.classList = 'tekst0';
+        document.querySelector('.lowerWrapper').appendChild(createFirstDiv);
+
+        let createSecondDiv = document.createElement('div');
+        createSecondDiv.classList = 'tekst';
+        document.querySelector('.lowerWrapper').appendChild(createSecondDiv);
+
+        let createThirdDiv = document.createElement('div');
+        createThirdDiv.classList = 'tekst3';
+        document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
+
+        let createFourthDiv = document.createElement('div');
+        createFourthDiv.classList = 'tekst4';
+        document.querySelector('.lowerWrapper').appendChild(createFourthDiv);
+
+        let createFivethDiv = document.createElement('div');
+        createFivethDiv.classList = 'tekst5';
+        document.querySelector('.lowerWrapper').appendChild(createFivethDiv);
+
+        let createSixthDiv = document.createElement('div');
+        createSixthDiv.classList = 'tekst6';
+        document.querySelector('.lowerWrapper').appendChild(createSixthDiv);
+
+
+
     document.querySelector('.tekst0').textContent = 'Imię i Nazwisko: ' + fin.realname;
     document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin.name;
     document.querySelector('.tekst3').textContent = 'Utwór: ' + fin.link;
