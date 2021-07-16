@@ -1,0 +1,24 @@
+[{
+	"realname": "Bartek Jakiś",
+	"name": "Biały",
+	"zdjecie": "<img src='zdjecia/bialy_srem.PNG' width='160' height='160'>",
+	"link": "https://www.youtube.com/watch?v=RLL1ShvOdhg",
+	"miasto": "Śrem",
+	"data_urodzenia": "01.01.1991",
+	"historia": "Urodził się i umar"
+}, {
+	"name": "Tomek",
+	"gatunek": "Alternatywny",
+	"rate": 100,
+	"available": true
+}, {
+	"name": "Fantom",
+	"gatunek": "rap",
+	"rate": 200,
+	"available": false
+}, {
+	"name": "Fiżbin",
+	"gatunek": "rap",
+	"rate": 400,
+	"available": true
+}]
