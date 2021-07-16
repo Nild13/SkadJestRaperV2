@@ -16,6 +16,7 @@ function myFunction(){
     visible.style.display = "block";
     if(fin){
     console.log(fin)
+    document.querySelector('.lowerWrapper').innerHTML = ' ';
     let createDiv = document.createElement('div');
     createDiv.classList = 'divv';
     document.querySelector('.lowerWrapper').appendChild(createDiv);
