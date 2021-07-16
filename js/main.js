@@ -6,7 +6,7 @@ function myFunction(){
     let data = document.querySelector('.input').value;
     if(data){
     document.querySelector('.input').value = '';
-    fetch('data.json')
+    fetch('data/data.json')
     .then(res =>res.json())
     .then(function(res){
     console.log(res)
