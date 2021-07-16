@@ -3,7 +3,7 @@ let data = '';
 
 function myFunction(){
    
-    let data = document.querySelector('.input').value;
+    let data = document.querySelector('.input').value.toLowerCase;
     if(data){
     document.querySelector('.input').value = '';
     fetch('data/data.json')
@@ -11,7 +11,7 @@ function myFunction(){
     .then(function(res){
     console.log(res)
 
-    let fin = res.find( record => record.name === data || record.miasto == data)
+    let fin = res.find( record => record.name.toLowerCase === data || record.miasto.toLowerCase == data)
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
     if(fin){
