@@ -3,7 +3,7 @@ let data = '';
 
 function myFunction(){
    
-    let data = document.querySelector('.input').value.toLowerCase;
+    let data = document.querySelector('.input').value;
     if(data){
     document.querySelector('.input').value = '';
     fetch('data/data.json')
@@ -11,13 +11,17 @@ function myFunction(){
     .then(function(res){
     console.log(res)
 
-    let fin = res.find( record => record.name.toLowerCase === data || record.miasto.toLowerCase == data)
+    let fin = res.find( record => record.name === data || record.miasto === data)
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
     if(fin){
     console.log(fin)
+    let createDiv = document.createElement('div');
+    createDiv.classList = 'divv';
+    document.querySelector('.lowerWrapper').appendChild(createDiv);
     let imagine = document.querySelector('.divv');
     imagine.innerHTML = fin.zdjecie;
+    //wszystkie musza się za każdym razem generować, bo inaczej znikaja dane po wpisaniu czegos czego nie ma lub błędnie
     document.querySelector('.tekst0').textContent = 'Imię i Nazwisko: ' + fin.realname;
     document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin.name;
     document.querySelector('.tekst3').textContent = 'Utwór: ' + fin.link;
@@ -26,14 +30,19 @@ function myFunction(){
     document.querySelector('.tekst6').textContent = 'Fakty: ' + fin.historia;//to chyba niepotrzebne
     }
     else{
-        document.querySelector('.tekst2').textContent = 'Nie ma takiej pozycji w wbazie danych'
+        
+        let visible = document.querySelector('.lowerWrapper');
+        visible.style.display = "block";
+        document.querySelector('.lowerWrapper').textContent = 'Nie ma takiej pozycji w bazie danych';
+        
     }
 })
 }
 else{
+    
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
-    document.querySelector('.tekst2').textContent = 'Musisz coś wpisac'
+    document.querySelector('.lowerWrapper').textContent = 'Musisz coś wpisac'
 }
 }
 
