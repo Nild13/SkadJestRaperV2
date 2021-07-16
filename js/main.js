@@ -20,6 +20,7 @@ function myFunction(){
     createDiv.classList = 'divv';
     document.querySelector('.lowerWrapper').appendChild(createDiv);
     let imagine = document.querySelector('.divv');
+    imagine.style.float = "right";
     imagine.innerHTML = fin.zdjecie;
     
 

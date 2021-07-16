@@ -1,5 +1,5 @@
 [{
-	"realname": "Bartek Jakiś",
+	"realname": "Bartek Jarnicki",
 	"name": "Biały",
 	"zdjecie": "<img src='zdjecia/bialy_srem.PNG' width='160' height='160'>",
 	"link": "https://www.youtube.com/watch?v=RLL1ShvOdhg",
@@ -7,10 +7,13 @@
 	"data_urodzenia": "01.01.1991",
 	"historia": "Urodził się i umar"
 }, {
+	"realname": "Tomek Wosinski",
 	"name": "Tomek",
-	"gatunek": "Alternatywny",
-	"rate": 100,
-	"available": true
+	"zdjecie": "<img src='zdjecia/bialy_srem.PNG' width='160' height='160'>",
+	"link": "https://www.youtube.com/watch?v=RLL1ShvOdhg",
+	"miasto": "Grzymysław",
+	"data_urodzenia": "01.01.1999",
+	"historia": "Urodził się i umar"
 }, {
 	"name": "Fantom",
 	"gatunek": "rap",
