@@ -1,6 +1,6 @@
 let btn = document.querySelector('button')
 let data = '';
-
+let finn = [1,2,3,4,5,6]
 function myFunction(){
    
     let data = document.querySelector('.input').value;
@@ -15,7 +15,7 @@ function myFunction(){
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
     if(fin.length === 1){
-    console.log(fin)
+    console.log(fin.length)
     document.querySelector('.lowerWrapper').innerHTML = ' ';
     let createDiv = document.createElement('div');
     createDiv.classList = 'divv';
@@ -67,57 +67,17 @@ function myFunction(){
         
     }
     else if(fin.length > 1){
+        
+        let liste = document.querySelector('ul')
         fin.forEach(function(item, index){
         console.log('Wypisuje '+ item.name)
-        let createDiv = document.createElement('div');
-        createDiv.classList = 'divv';
-        document.querySelector('.lowerWrapper').appendChild(createDiv);
-        let imagine = document.querySelector('.divv');
-        imagine.style.float = "right";
-        imagine.innerHTML = item.zdjecie;
-    
+        let test = document.createElement('li')
+        test.innerHTML = item.name + item.link;
+        liste.appendChild(test)})
 
-        let createFirstDiv = document.createElement('div');
-        createFirstDiv.classList = 'tekst0';
-        document.querySelector('.lowerWrapper').appendChild(createFirstDiv);
-
-        let createSecondDiv = document.createElement('div');
-        createSecondDiv.classList = 'tekst';
-        document.querySelector('.lowerWrapper').appendChild(createSecondDiv);
-
+        console.log(fin.length)
+       
         
-
-        let createFourthDiv = document.createElement('div');
-        createFourthDiv.classList = 'tekst4';
-        document.querySelector('.lowerWrapper').appendChild(createFourthDiv);
-
-        let createFivethDiv = document.createElement('div');
-        createFivethDiv.classList = 'tekst5';
-        document.querySelector('.lowerWrapper').appendChild(createFivethDiv);
-
-        let createSixthDiv = document.createElement('div');
-        createSixthDiv.classList = 'tekst6';
-        document.querySelector('.lowerWrapper').appendChild(createSixthDiv);
-
-        let createThirdDiv = document.createElement('iframe');
-        createThirdDiv.classList = 'tekst3';
-        createThirdDiv.src = item.link;
-        createThirdDiv.width = '620px';
-        createThirdDiv.height = '360px';
-        createThirdDiv.frameBorder = 0;
-        createThirdDiv.gesture = 'media';
-        createThirdDiv.allow = 'encrypted-media';
-        createThirdDiv.allowFullscreen;
-        createThirdDiv.style.marginTop = '30px'
-    
-
-        document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
-        document.querySelector('.tekst0').textContent = 'Imię i Nazwisko: ' + item.realname;
-        document.querySelector('.tekst').textContent = 'Pseudonim: ' + item.name;    
-        document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + item.miasto;
-        document.querySelector('.tekst5').textContent = 'Data urodzenia: ' + item.data_urodzenia;
-        document.querySelector('.tekst6').textContent = 'Fakty: ' + item.historia;
-        })
     }
     else{
         
