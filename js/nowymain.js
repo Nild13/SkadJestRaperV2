@@ -81,8 +81,6 @@ function myFunction(){
         test.classList = 'klasaTestowa';
         test.innerHTML = item.name + item.realname + item.miasto + item.data_urodzenia;
         liste.appendChild(test) // dodanie stringów do wrapper
-        
-       
     })
     }
     else{
