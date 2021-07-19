@@ -33,9 +33,7 @@ function myFunction(){
         createSecondDiv.classList = 'tekst';
         document.querySelector('.lowerWrapper').appendChild(createSecondDiv);
 
-        let createThirdDiv = document.createElement('div');
-        createThirdDiv.classList = 'tekst3';
-        document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
+        
 
         let createFourthDiv = document.createElement('div');
         createFourthDiv.classList = 'tekst4';
@@ -49,14 +47,29 @@ function myFunction(){
         createSixthDiv.classList = 'tekst6';
         document.querySelector('.lowerWrapper').appendChild(createSixthDiv);
 
+        let createThirdDiv = document.createElement('iframe');
+        createThirdDiv.classList = 'tekst3';
+        createThirdDiv.src = fin.link;
+        createThirdDiv.width = '420px';
+        createThirdDiv.height = '315px';
+        createThirdDiv.frameBorder = 0;
+        createThirdDiv.gesture = 'media';
+        createThirdDiv.allow = 'encrypted-media';
+        createThirdDiv.allowFullscreen;
+    
+
+        document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
+
 
 
         document.querySelector('.tekst0').textContent = 'Imię i Nazwisko: ' + fin.realname;
-        document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin.name;
-        document.querySelector('.tekst3').textContent = 'Utwór: ' + fin.link;
+        document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin.name;    
         document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + fin.miasto;
         document.querySelector('.tekst5').textContent = 'Data urodzenia: ' + fin.data_urodzenia;
         document.querySelector('.tekst6').textContent = 'Fakty: ' + fin.historia;
+        // document.querySelector('.tekst3').innerHTML = ' <iframe src="' + fin.link + '"width="420" height="315"></iframe>'
+        
+        
     }
     else{
         
@@ -76,4 +89,10 @@ else{
 }
 
 
-    
+ let wege = document.getElementById('button');
+ wege.addEventListener("keydown", function(e){
+     if(e.code === "Enter"){
+         myFunction()
+     }
+     else{}
+ })   

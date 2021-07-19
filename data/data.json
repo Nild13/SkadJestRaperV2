@@ -1,8 +1,9 @@
+// W przypadku tworzenia linków należy wymazać "watch?v=" i w to miejsce dać "embed/"
 [{
 	"realname": "Bartek Jarnicki",
 	"name": "Biały",
 	"zdjecie": "<img src='zdjecia/bialy_srem.PNG' width='160' height='160'>",
-	"link": "https://www.youtube.com/watch?v=RLL1ShvOdhg",
+	"link": "https://www.youtube.com/embed/RLL1ShvOdhg",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1991",
 	"historia": "Urodził się i umar"
@@ -10,7 +11,7 @@
 	"realname": "Tomek Wosinski",
 	"name": "Tomek Wosinski",
 	"zdjecie": "<img src='zdjecia/tomasz_wosinski_srem.jpg' width='160' height='160'>",
-	"link": "https://www.youtube.com/watch?v=pvztVlhGO24",
+	"link": "https://www.youtube.com/embed/pvztVlhGO24",
 	"miasto": "Grzymysław",
 	"data_urodzenia": "01.01.1999",
 	"historia": "Urodził się i umar"
