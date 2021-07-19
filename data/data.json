@@ -1,4 +1,4 @@
-// W przypadku tworzenia linków należy wymazać "watch?v=" i w to miejsce dać "embed/"
+
 [{
 	"realname": "Bartek Jarnicki",
 	"name": "Biały",
@@ -16,10 +16,13 @@
 	"data_urodzenia": "01.01.1999",
 	"historia": "Urodził się i umar"
 }, {
+	"realname": "Bartosz SoBolewski",
 	"name": "Fantom",
-	"gatunek": "rap",
-	"rate": 200,
-	"available": false
+	"zdjecie": "<img src='zdjecia/bartosz_sobolewski_srem.PNG' width='160' height='160'>",
+	"link": "https://www.youtube.com/embed/5t3ag9Qu-pA",
+	"miasto": "Śrem",
+	"data_urodzenia": "01.01.1991",
+	"historia": "Urodził się i umar"
 }, {
 	"name": "Fiżbin",
 	"gatunek": "rap",

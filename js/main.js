@@ -50,18 +50,16 @@ function myFunction(){
         let createThirdDiv = document.createElement('iframe');
         createThirdDiv.classList = 'tekst3';
         createThirdDiv.src = fin.link;
-        createThirdDiv.width = '420px';
-        createThirdDiv.height = '315px';
+        createThirdDiv.width = '620px';
+        createThirdDiv.height = '360px';
         createThirdDiv.frameBorder = 0;
         createThirdDiv.gesture = 'media';
         createThirdDiv.allow = 'encrypted-media';
         createThirdDiv.allowFullscreen;
+        createThirdDiv.style.marginTop = '30px'
     
 
         document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
-
-
-
         document.querySelector('.tekst0').textContent = 'Imię i Nazwisko: ' + fin.realname;
         document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin.name;    
         document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + fin.miasto;
