@@ -2,7 +2,7 @@ let btn = document.querySelector('button')
 let data = '';
 let finn = [1,2,3,4,5,6]
 function myFunction(){
-   
+    document.querySelector('.lowerWrapper').textContent = ' ';
     let data = document.querySelector('.input').value;
     if(data){
     document.querySelector('.input').value = '';
@@ -12,17 +12,23 @@ function myFunction(){
     console.log(res)
 
     let fin = res.filter( record => record.name === data || record.miasto === data)
+    console.log(fin)
+    console.log(fin.name)
+
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
     if(fin.length === 1){
     console.log(fin.length)
     document.querySelector('.lowerWrapper').innerHTML = ' ';
+
     let createDiv = document.createElement('div');
     createDiv.classList = 'divv';
     document.querySelector('.lowerWrapper').appendChild(createDiv);
+
+
     let imagine = document.querySelector('.divv');
     imagine.style.float = "right";
-    imagine.innerHTML = fin.zdjecie;
+    imagine.innerHTML = fin[0].zdjecie;
     
 
         let createFirstDiv = document.createElement('div');
@@ -47,7 +53,7 @@ function myFunction(){
 
         let createThirdDiv = document.createElement('iframe');
         createThirdDiv.classList = 'tekst3';
-        createThirdDiv.src = fin.link;
+        createThirdDiv.src = fin[0].link;
         createThirdDiv.width = '620px';
         createThirdDiv.height = '360px';
         createThirdDiv.frameBorder = 0;
@@ -58,26 +64,26 @@ function myFunction(){
         document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
 
         
-        document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin.name;    
-        document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + fin.miasto;
-        document.querySelector('.tekst5').textContent = 'Data urodzenia: ' + fin.data_urodzenia;
-        document.querySelector('.tekst6').textContent = 'Fakty: ' + fin.historia;
+        document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin[0].name;    
+        document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + fin[0].miasto;
+        document.querySelector('.tekst5').textContent = 'Data urodzenia: ' + fin[0].data_urodzenia;
+        document.querySelector('.tekst6').textContent = 'Fakty: ' + fin[0].historia;
         // document.querySelector('.tekst3').innerHTML = ' <iframe src="' + fin.link + '"width="420" height="315"></iframe>'
         
         
     }
     else if(fin.length > 1){
         
-        let liste = document.querySelector('ul')
+        let liste = document.querySelector('.lowerWrapper')
         fin.forEach(function(item, index){
         console.log('Wypisuje '+ item.name)
-        let test = document.createElement('li')
-        test.innerHTML = item.name + item.link;
-        liste.appendChild(test)})
-
-        console.log(fin.length)
-       
+        let test = document.createElement('div')
+        test.classList = 'klasaTestowa';
+        test.innerHTML = item.name + item.realname + item.miasto + item.data_urodzenia;
+        liste.appendChild(test) // dodanie stringów do wrapper
         
+       
+    })
     }
     else{
         
@@ -87,12 +93,13 @@ function myFunction(){
         
     }
 })
+
 }
-    else{
+else{
     
-        let visible = document.querySelector('.lowerWrapper');
-        visible.style.display = "block";
-        document.querySelector('.lowerWrapper').textContent = 'Musisz coś wpisac'
+    let visible = document.querySelector('.lowerWrapper');
+    visible.style.display = "block";
+    document.querySelector('.lowerWrapper').textContent = 'Musisz coś wpisac'
 }
 }
 

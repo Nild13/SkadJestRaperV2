@@ -28,6 +28,7 @@ function myFunction(){
         let createFirstDiv = document.createElement('div');
         createFirstDiv.classList = 'tekst0';
         document.querySelector('.lowerWrapper').appendChild(createFirstDiv);
+        
 
         let createSecondDiv = document.createElement('div');
         createSecondDiv.classList = 'tekst';
