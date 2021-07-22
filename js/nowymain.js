@@ -84,7 +84,7 @@ function myFunction(){
     }
     else if(fin.length > 1){
         itemsNumber.innerHTML = '';
-        itemsNumber.innerHTML = 'Znaleziono: ' + finLength + ' wyników';
+        itemsNumber.innerHTML = 'Znaleziono: ' + finLength + ' wyników w mieście ' + data;
         itemsNumber.style.display = 'block';
         let createUl = document.createElement('ul');
         createUl.classList = 'list-group';

@@ -2,7 +2,7 @@
 [{
 	"realname": "Bartek Jarnicki",
 	"name": "Biały",
-	"zdjecie": "<img src='zdjecia/bialy_srem.PNG' width='160' height='160'>",
+	"zdjecie": "<img src='zdjecia/bartek_jarnicki_srem.PNG' width='160' height='160'>",
 	"link": "https://www.youtube.com/embed/RLL1ShvOdhg",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1991",
@@ -26,8 +26,8 @@
 }, {
 	"realname": "Kacper Madajka",
 	"name": "Madaja",
-	"zdjecie": "<img src='zdjecia/bartosz_sobolewski_srem.PNG' width='160' height='160'>",
-	"link": "https://www.youtube.com/embed/5t3ag9Qu-pA",
+	"zdjecie": "<img src='zdjecia/kacper_madajka_srem.PNG' width='160' height='160'>",
+	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1999",
 	"historia": "Urodził się i umar"
