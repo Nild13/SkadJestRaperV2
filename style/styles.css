@@ -79,3 +79,26 @@ body{
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
+/* .list-group{
+    background-color: red;} */
+    /* .list-group-item-light{
+        background-color: transparent;
+    }
+    .list-group-item-light.list-group-item-action:hover{
+        background-color: white;
+    } */
+
+    .klasaTestowa{
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0,0.6);
+        max-width: 550px;
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        font-size: 12px;
+    }

@@ -1,10 +1,13 @@
+let itemsNumber = document.querySelector('.klasaTestowa');
 let btn = document.querySelector('button')
 let data = '';
 let finn = [1,2,3,4,5,6]
 function myFunction(){
     document.querySelector('.lowerWrapper').textContent = ' ';
     let data = document.querySelector('.input').value;
+
     if(data){
+    itemsNumber.style.display = 'none';
     document.querySelector('.input').value = '';
     fetch('data/data.json')
     .then(res =>res.json())
@@ -12,12 +15,19 @@ function myFunction(){
     console.log(res)
 
     let fin = res.filter( record => record.name === data || record.miasto === data)
-    console.log(fin)
+    let finLength = fin.length;
+
+        
+
+    console.log(fin.length)
     console.log(fin.name)
 
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
+
     if(fin.length === 1){
+    itemsNumber.style.display = 'none';
+    itemsNumber.innerHTML = '';
     console.log(fin.length)
     document.querySelector('.lowerWrapper').innerHTML = ' ';
 
@@ -73,18 +83,28 @@ function myFunction(){
         
     }
     else if(fin.length > 1){
-        
-        let liste = document.querySelector('.lowerWrapper')
-        fin.forEach(function(item, index){
-        console.log('Wypisuje '+ item.name)
-        let test = document.createElement('div')
-        test.classList = 'klasaTestowa';
-        test.innerHTML = item.name + item.realname + item.miasto + item.data_urodzenia;
+        itemsNumber.innerHTML = '';
+        itemsNumber.innerHTML = 'Znaleziono: ' + finLength + ' wyników';
+        itemsNumber.style.display = 'block';
+        let createUl = document.createElement('ul');
+        createUl.classList = 'list-group';
+        document.querySelector('.lowerWrapper').appendChild(createUl);
+        let liste = document.querySelector('.list-group');
+        fin.forEach(function(item){
+        console.log('Wypisuje '+ item.name);
+        let test = document.createElement('li');
+        test.classList = 'list-group-item list-group-item-action list-group-item-light';
+        test.innerHTML = item.name;
+        let CreateDiv = document.createElement('div');
+        CreateDiv.style.float = 'right';
+        CreateDiv.innerHTML = item.zdjecie;
+        test.appendChild(CreateDiv)
         liste.appendChild(test) // dodanie stringów do wrapper
     })
     }
     else{
-        
+        itemsNumber.style.display = 'none';
+        itemsNumber.innerHTML = '';
         let visible = document.querySelector('.lowerWrapper');
         visible.style.display = "block";
         document.querySelector('.lowerWrapper').textContent = 'Nie ma takiej pozycji w bazie danych';
@@ -94,7 +114,8 @@ function myFunction(){
 
 }
 else{
-    
+    itemsNumber.style.display = 'none';
+    itemsNumber.innerHTML = '';
     let visible = document.querySelector('.lowerWrapper');
     visible.style.display = "block";
     document.querySelector('.lowerWrapper').textContent = 'Musisz coś wpisac'
