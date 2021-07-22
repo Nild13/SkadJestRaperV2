@@ -79,8 +79,11 @@ body{
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
-/* .list-group{
-    background-color: red;} */
+.list-group{
+    overflow: scroll; 
+    overflow-x: hidden;
+    max-height: 535px;
+}
     /* .list-group-item-light{
         background-color: transparent;
     }

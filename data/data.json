@@ -31,15 +31,7 @@
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1999",
 	"historia": "Urodził się i umar"
-},{
-"realname": "Kacper Madajka",
-	"name": "Madaja",
-	"zdjecie": "<img src='zdjecia/kacper_madajka_srem.PNG' width='160' height='160'>",
-	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
-	"miasto": "Śrem",
-	"data_urodzenia": "01.01.1999",
-	"historia": "Urodził się i umar"
-},{
+}, {
 	"realname": "Kacper Madajka",
 	"name": "Madaja",
 	"zdjecie": "<img src='zdjecia/kacper_madajka_srem.PNG' width='160' height='160'>",
@@ -47,8 +39,16 @@
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1999",
 	"historia": "Urodził się i umar"
-	},{
-		"realname": "Kacper Madajka",
+}, {
+	"realname": "Kacper Madajka",
+	"name": "Madaja",
+	"zdjecie": "<img src='zdjecia/kacper_madajka_srem.PNG' width='160' height='160'>",
+	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
+	"miasto": "Śrem",
+	"data_urodzenia": "01.01.1999",
+	"historia": "Urodził się i umar"
+}, {
+	"realname": "Kacper Madajka",
 	"name": "Madaja",
 	"zdjecie": "<img src='zdjecia/kacper_madajka_srem.PNG' width='160' height='160'>",
 	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
