@@ -1,7 +1,6 @@
 let itemsNumber = document.querySelector('.klasaTestowa');
 let btn = document.querySelector('button')
 let data = '';
-let finn = [1,2,3,4,5,6]
 function myFunction(){
     document.querySelector('.lowerWrapper').textContent = ' ';
     let data = document.querySelector('.input').value;
@@ -73,7 +72,7 @@ function myFunction(){
         createThirdDiv.style.marginTop = '30px'
         document.querySelector('.lowerWrapper').appendChild(createThirdDiv);
 
-        
+        document.querySelector('.tekst0').textContent = 'Imię i Nazwisko: ' + fin[0].realname;  
         document.querySelector('.tekst').textContent = 'Pseudonim: ' + fin[0].name;    
         document.querySelector('.tekst4').textContent = 'Skąd pochodzi: ' + fin[0].miasto;
         document.querySelector('.tekst5').textContent = 'Data urodzenia: ' + fin[0].data_urodzenia;
@@ -94,6 +93,7 @@ function myFunction(){
         console.log('Wypisuje '+ item.name);
         let test = document.createElement('li');
         test.classList = 'list-group-item list-group-item-action list-group-item-light';
+        test.style.fontSize = '30px'
         test.innerHTML = item.name;
         let CreateDiv = document.createElement('div');
         CreateDiv.style.float = 'right';
