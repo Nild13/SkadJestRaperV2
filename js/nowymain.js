@@ -4,6 +4,7 @@ let data = '';
 function myFunction(){
     document.querySelector('.lowerWrapper').textContent = ' ';
     let data = document.querySelector('.input').value;
+    
 
     if(data){
     itemsNumber.style.display = 'none';
@@ -81,6 +82,7 @@ function myFunction(){
         
         
     }
+    
     else if(fin.length > 1){
         itemsNumber.innerHTML = '';
         itemsNumber.innerHTML = 'Znaleziono: ' + finLength + ' wyników w mieście ' + data;
@@ -90,9 +92,11 @@ function myFunction(){
         document.querySelector('.lowerWrapper').appendChild(createUl);
         let liste = document.querySelector('.list-group');
         fin.forEach(function(item){
+            
         console.log('Wypisuje '+ item.name);
         let test = document.createElement('li');
         test.classList = 'list-group-item list-group-item-action list-group-item-light';
+        test.id = 'testoweId'
         test.style.fontSize = '30px'
         test.innerHTML = item.name;
         let CreateDiv = document.createElement('div');
@@ -100,6 +104,9 @@ function myFunction(){
         CreateDiv.innerHTML = item.zdjecie;
         test.appendChild(CreateDiv)
         liste.appendChild(test) // dodanie stringów do wrapper
+        let dupa = document.querySelector('#testoweId');
+        console.log(dupa)
+        
     })
     }
     else{
