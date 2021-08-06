@@ -91,21 +91,18 @@ function myFunction(){
         createUl.classList = 'list-group';
         document.querySelector('.lowerWrapper').appendChild(createUl);
         let liste = document.querySelector('.list-group');
-        fin.forEach(function(item){
-            
+        fin.forEach(function(item, index){ //dodalem tu index. teraz trzeba to przekazac do kazdego data-key w <li>
         console.log('Wypisuje '+ item.name);
         let test = document.createElement('li');
         test.classList = 'list-group-item list-group-item-action list-group-item-light';
-        test.id = 'testoweId'
         test.style.fontSize = '30px'
         test.innerHTML = item.name;
+        test.dataset.key = index; //powinno dodac kolejno dataset do kazdego li
         let CreateDiv = document.createElement('div');
         CreateDiv.style.float = 'right';
         CreateDiv.innerHTML = item.zdjecie;
         test.appendChild(CreateDiv)
         liste.appendChild(test) // dodanie stringów do wrapper
-        let dupa = document.querySelector('#testoweId');
-        console.log(dupa)
         
     })
     }
