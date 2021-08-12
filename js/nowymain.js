@@ -103,7 +103,7 @@ function myFunction(){
         CreateDiv.innerHTML = item.zdjecie;
         test.appendChild(CreateDiv)
         liste.appendChild(test) // dodanie stringów do wrapper
-        
+        test.addEventListener("click", function(){ alert("Hello World!"); });
     })
     }
     else{
