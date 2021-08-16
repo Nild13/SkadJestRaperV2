@@ -113,11 +113,12 @@ function myFunction(){
             document.querySelector(`li[data-key="${index2}"]`)
             $('#exampleModal').modal('show');
             // tu trzeba dodać to co ma sie wyswietlać w modalu
-            document.querySelector('.modal-body .imie').textContent = `Imie ${index2}`;
-            document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia ${index2}`;
-            document.querySelector('.modal-body .fakty').textContent = `Fakty ${index2}`;
-            document.querySelector('.modal-body .YT').textContent = `YT ${index2}`;
-            document.querySelector('.modal-body .miniaturka').textContent = `miniaturka ${index2}`;
+            document.querySelector('.modal-body .imie').textContent = `Imie ${fin[index2].name}`;
+            document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia ${fin[index2].data_urodzenia}`;
+            document.querySelector('.modal-body .fakty').textContent = `Fakty ${fin[index2].historia}`;
+            document.querySelector('.modal-body .YT').textContent = `YT ${fin[index2].link}`;
+            document.querySelector('.modal-body .miniaturka').textContent = `miniaturka ${fin[index2].zdjecie}`;
+            console.log(fin[index2].name)
             console.log(index2)
         });
     })
