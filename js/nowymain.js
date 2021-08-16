@@ -112,6 +112,12 @@ function myFunction(){
             const index2 = e.target.dataset.key;
             document.querySelector(`li[data-key="${index2}"]`)
             $('#exampleModal').modal('show');
+            // tu trzeba dodać to co ma sie wyswietlać w modalu
+            document.querySelector('.modal-body .imie').textContent = `Imie ${index2}`;
+            document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia ${index2}`;
+            document.querySelector('.modal-body .fakty').textContent = `Fakty ${index2}`;
+            document.querySelector('.modal-body .YT').textContent = `YT ${index2}`;
+            document.querySelector('.modal-body .miniaturka').textContent = `miniaturka ${index2}`;
             console.log(index2)
         });
     })
