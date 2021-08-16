@@ -103,10 +103,10 @@ function myFunction(){
         CreateDiv.innerHTML = item.zdjecie;
         test.appendChild(CreateDiv)
         liste.appendChild(test) // dodanie stringów do wrapper
-        test.addEventListener("click", function(e){
-            const index = e.target.parentNode.dataset.key;
-            document.querySelector(`li[data-key="${index}"]`)
-            console.log('lel')
+        test.addEventListener("click", (e) => {
+            const index2 = e.target.dataset.key;
+            document.querySelector(`li[data-key="${index2}"]`)
+            console.log(index2)
         });
     })
     }
