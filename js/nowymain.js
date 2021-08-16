@@ -1,6 +1,11 @@
 let itemsNumber = document.querySelector('.klasaTestowa');
 let btn = document.querySelector('button')
 let data = '';
+
+function closeModal(){
+    $('#exampleModal').modal('hide');
+}
+
 function myFunction(){
     document.querySelector('.lowerWrapper').textContent = ' ';
     let data = document.querySelector('.input').value;
@@ -106,6 +111,7 @@ function myFunction(){
         test.addEventListener("click", (e) => {
             const index2 = e.target.dataset.key;
             document.querySelector(`li[data-key="${index2}"]`)
+            $('#exampleModal').modal('show');
             console.log(index2)
         });
     })
