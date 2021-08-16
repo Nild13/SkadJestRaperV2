@@ -120,8 +120,7 @@ function myFunction(){
             miniaturka.innerHTML = fin[index2].zdjecie;
             document.querySelector('.modal-body .fakty').textContent = `Fakty ${fin[index2].historia}`;
             // dodaja sie linki z youtube zamiast podmieniac
-            let youTube = document.createElement('iframe');
-            youTube.classList = 'tekst3';
+            const youTube = document.createElement('iframe');
             youTube.src = fin[index2].link;
             youTube.width = '467px';
             youTube.height = '360px';
