@@ -115,19 +115,22 @@ function myFunction(){
             // tu trzeba dodać to co ma sie wyswietlać w modalu
             document.querySelector('.modal-body .imie').textContent = `Imie ${fin[index2].name}`;
             document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia ${fin[index2].data_urodzenia}`;
+            let miniaturka = document.querySelector('.modal-body .miniaturka');
+            miniaturka.style.float = 'right';
+            miniaturka.innerHTML = fin[index2].zdjecie;
             document.querySelector('.modal-body .fakty').textContent = `Fakty ${fin[index2].historia}`;
-            let createThirdDiv = document.createElement('iframe');
-            createThirdDiv.classList = 'tekst3';
-            createThirdDiv.src = fin[index2].link;
-            createThirdDiv.width = '620px';
-            createThirdDiv.height = '360px';
-            createThirdDiv.frameBorder = 0;
-            createThirdDiv.gesture = 'media';
-            createThirdDiv.allow = 'encrypted-media';
-            createThirdDiv.allowFullscreen;
-            createThirdDiv.style.marginTop = '30px'
-            document.querySelector('.modal-body .YT').appendChild(createThirdDiv);
-            document.querySelector('.modal-body .miniaturka').innerHTML = fin[index2].zdjecie;
+            // dodaja sie linki z youtube zamiast podmieniac
+            let youTube = document.createElement('iframe');
+            youTube.classList = 'tekst3';
+            youTube.src = fin[index2].link;
+            youTube.width = '467px';
+            youTube.height = '360px';
+            youTube.frameBorder = 0;
+            youTube.gesture = 'media';
+            youTube.allow = 'encrypted-media';
+            youTube.allowFullscreen;
+            youTube.style.marginTop = '30px'
+            document.querySelector('.modal-body .YT').appendChild(youTube);           
             console.log(fin[index2].name)
             console.log(index2)
         });
