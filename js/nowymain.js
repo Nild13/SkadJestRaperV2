@@ -4,6 +4,7 @@ let data = '';
 
 function closeModal(){
     $('#exampleModal').modal('hide');
+    document.querySelector('.modal-body .YT').innerHTML = '';
 }
 
 function myFunction(){
@@ -113,7 +114,8 @@ function myFunction(){
             document.querySelector(`li[data-key="${index2}"]`)
             $('#exampleModal').modal('show');
             // tu trzeba dodać to co ma sie wyswietlać w modalu
-            document.querySelector('.modal-body .imie').textContent = `Imie ${fin[index2].name}`;
+            document.querySelector('.modal-title').textContent = `${fin[index2].name}`;
+            document.querySelector('.modal-body .imie').textContent = `Imie ${fin[index2].realname}`;
             document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia ${fin[index2].data_urodzenia}`;
             let miniaturka = document.querySelector('.modal-body .miniaturka');
             miniaturka.style.float = 'right';
