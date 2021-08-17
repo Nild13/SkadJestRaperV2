@@ -90,7 +90,9 @@ body{
     .list-group-item-light.list-group-item-action:hover{
         background-color: white;
     } */
-
+    .list-group-item-light.list-group-item-action:hover{
+        cursor: pointer;
+    }
     .klasaTestowa{
         position: absolute;
         top: 23%;
