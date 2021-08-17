@@ -9,7 +9,7 @@ function closeModal(){
 
 function myFunction(){
     document.querySelector('.lowerWrapper').textContent = ' ';
-    let data = document.querySelector('.input').value.toLowerCase(); //zamieniam tu inputa na małe litery, ale jeszcze nie wiem jak zamienic w jsonie przy porównaniu xD
+    let data = document.querySelector('.input').value.toLowerCase();
     console.log(data)
     
 
@@ -21,7 +21,7 @@ function myFunction(){
     .then(function(res){
     console.log(res)
 
-    let fin = res.filter( record => record.name === data || record.miasto === data || record.realname === data)
+    let fin = res.filter( record => record.name.toLowerCase() === data || record.miasto.toLowerCase() === data || record.realname.toLowerCase() === data)
     let finLength = fin.length;
 
         
