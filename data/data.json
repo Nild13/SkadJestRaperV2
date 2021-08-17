@@ -6,7 +6,9 @@
 	"link": "https://www.youtube.com/embed/RLL1ShvOdhg",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1991",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 1,
+	"facebook": "empty"
 }, {
 	"realname": "Tomek Wosinski",
 	"name": "Tomek Wosinski",
@@ -14,7 +16,9 @@
 	"link": "https://www.youtube.com/embed/pvztVlhGO24",
 	"miasto": "Grzymysław",
 	"data_urodzenia": "01.01.1999",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 2,
+	"facebook": "empty"
 }, {
 	"realname": "Bartosz Sobolewski",
 	"name": "Fantom",
@@ -22,7 +26,9 @@
 	"link": "https://www.youtube.com/embed/5t3ag9Qu-pA",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1991",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 3,
+	"facebook": "empty"
 }, {
 	"realname": "Kacper Madajka",
 	"name": "Madaja",
@@ -30,15 +36,19 @@
 	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1999",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 4,
+	"facebook": "empty"
 }, {
-	"realname": "Kacper Madajka",
-	"name": "Madaja",
-	"zdjecie": "<img src='zdjecia/kacper_madajka_srem.PNG' width='160' height='160'>",
-	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
+	"realname": "Szymon Piasecki",
+	"name": "Fiszbin",
+	"zdjecie": "<img src='zdjecia/szymon_piasecki_srem.PNG' width='160' height='160'>",
+	"link": "https://www.youtube.com/embed/9CJl2ueNiYY",
 	"miasto": "Śrem",
 	"data_urodzenia": "01.01.1999",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 5,
+	"facebook": "empty"
 }, {
 	"realname": "Kacper Madajka",
 	"name": "Madaja",
@@ -46,7 +56,9 @@
 	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
 	"miasto": "Zbrudzewo",
 	"data_urodzenia": "01.01.1999",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 6,
+	"facebook": "empty"
 }, {
 	"realname": "Kacper Madajka",
 	"name": "Madaja",
@@ -54,7 +66,9 @@
 	"link": "https://www.youtube.com/embed/dnI6xOdsLp4",
 	"miasto": "Zbrudzewo",
 	"data_urodzenia": "01.01.1999",
-	"historia": "Urodził się i umar"
+	"historia": "Urodził się i umar",
+	"id": 7,
+	"facebook": "empty"
 	}
 
 ]
