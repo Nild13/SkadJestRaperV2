@@ -68,7 +68,6 @@ function myFunction(){
         document.querySelector('.tekst6').textContent = 'Fakty: ' + fin.historia;
         // document.querySelector('.tekst3').innerHTML = ' <iframe src="' + fin.link + '"width="420" height="315"></iframe>'
         
-        
     }
     else{
         
