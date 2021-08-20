@@ -7,6 +7,16 @@ function closeModal(){
     document.querySelector('.modal-body .YT').innerHTML = '';
 }
 
+function polishPlural(singularNominativ, pluralNominativ, pluralGenitive, value) {
+    if (value === 1) {
+        return singularNominativ;
+    } else if (value % 10 >= 2 && value % 10 <= 4 && (value % 100 < 10 || value % 100 >= 20)) {
+        return pluralNominativ;
+    } else {
+        return pluralGenitive;
+    }
+}
+
 function myFunction(){
     document.querySelector('.lowerWrapper').textContent = ' ';
     let data = document.querySelector('.input').value.toLowerCase();
@@ -93,7 +103,7 @@ function myFunction(){
     else if(fin.length > 1){
         let odmiana = '';
         itemsNumber.innerHTML = '';
-        finLength == 1 ? odmiana = "wynik" : finLength == 2 ? odmiana = "wyniki" : finLength == 3 ? odmiana = "wyniki" : finLength == 4 ? odmiana = "wyniki" : odmiana = "wyników";
+        odmiana = polishPlural('wynik', 'wyniki', 'wyników', finLength);
         itemsNumber.innerHTML = 'Znaleziono: ' + finLength +' '+  odmiana + ' w mieście ' + data;
         itemsNumber.style.display = 'block';
         let createUl = document.createElement('ul');
