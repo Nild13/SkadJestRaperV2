@@ -116,12 +116,13 @@ function myFunction(){
             $('#exampleModal').modal('show');
             // tu trzeba dodać to co ma sie wyswietlać w modalu
             document.querySelector('.modal-title').textContent = `${fin[index2].name}`;
-            document.querySelector('.modal-body .imie').textContent = `Imie ${fin[index2].realname}`;
-            document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia ${fin[index2].data_urodzenia}`;
+            document.querySelector('.modal-body .imie').textContent = `Imię i Nazwisko: ${fin[index2].realname}`;
+            document.querySelector('.modal-body .dUrodzenia').textContent = `Data Urodzenia: ${fin[index2].data_urodzenia}`;
+            document.querySelector('.modal-body .mUrodzenia').textContent = `Miejsce Urodzenia: ${fin[index2].miasto}`;
             let miniaturka = document.querySelector('.modal-body .miniaturka');
             miniaturka.style.float = 'right';
             miniaturka.innerHTML = fin[index2].zdjecie;
-            document.querySelector('.modal-body .fakty').textContent = `Fakty ${fin[index2].historia}`;
+            document.querySelector('.modal-body .fakty').textContent = `Informacje: ${fin[index2].historia}`;
             // dodaja sie linki z youtube zamiast podmieniac
             const youTube = document.createElement('iframe');
             youTube.src = fin[index2].link;
