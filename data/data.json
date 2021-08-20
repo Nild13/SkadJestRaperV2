@@ -52,7 +52,7 @@
 }, {
 	"realname": "Ryszard Andrzejewski",
 	"name": "Peja",
-	"zdjecie": "<img src='zdjecia/poznan/ryszard_andrzejewski_poznan.PNG' width='160' height='160'>",
+	"zdjecie": "<img src='zdjecia/poznan/ryszard_andrzejewski_poznan.png' width='160' height='160'>",
 	"link": "https://www.youtube.com/embed/1ChbVA4EmuE",
 	"miasto": "Poznań",
 	"data_urodzenia": "17.09.1976",
@@ -62,7 +62,7 @@
 }, {
 	"realname": "Wojciech Zawadzki",
 	"name": "Słoń",
-	"zdjecie": "<img src='zdjecia/poznan/wojciech_zawadzki_poznan.PNG' width='160' height='160'>",
+	"zdjecie": "<img src='zdjecia/poznan/wojciech_zawadzki_poznan.png' width='160' height='160'>",
 	"link": "https://www.youtube.com/embed/CgZDttfdVAc",
 	"miasto": "Poznań",
 	"data_urodzenia": "27.11.1983",
