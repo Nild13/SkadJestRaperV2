@@ -91,8 +91,10 @@ function myFunction(){
     }
     
     else if(fin.length > 1){
+        let odmiana = '';
         itemsNumber.innerHTML = '';
-        itemsNumber.innerHTML = 'Znaleziono: ' + finLength + ' wyników w mieście ' + data;
+        finLength == 1 ? odmiana = "wynik" : finLength == 2 ? odmiana = "wyniki" : finLength == 3 ? odmiana = "wyniki" : finLength == 4 ? odmiana = "wyniki" : odmiana = "wyników";
+        itemsNumber.innerHTML = 'Znaleziono: ' + finLength +' '+  odmiana + ' w mieście ' + data;
         itemsNumber.style.display = 'block';
         let createUl = document.createElement('ul');
         createUl.classList = 'list-group';
