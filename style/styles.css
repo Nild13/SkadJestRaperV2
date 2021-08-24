@@ -9,10 +9,10 @@
 }
 
 body{
-	background: url('../bg.jpg') no-repeat center;
-	background-size: cover;
+	/* background: url('../zdjecia/wallpapers/bg.jpg') no-repeat center; */
+	/* background-size: cover;
 	width: 100%;
-	height: 100vh;
+	height: 100vh; */
 }
 
 .wrapper{

@@ -1,3 +1,17 @@
+window.onload = function() {
+    // let wynik = Math.floor(Math.random() * (8 - 1)) + 1;
+    let wynik = 1;
+    console.log('Załaduj tapete i style nr: ' + wynik)
+    let tlo = `'../zdjecia/wallpapers/${wynik}.jpg'`
+    console.log(tlo)
+    document.querySelector('body').style.background = `url(${tlo}) no-repeat center`
+    document.querySelector('body').style.backgroundSize = 'cover';
+    document.querySelector('body').style.width = '100%';
+    document.querySelector('body').style.height= '100vh';
+
+  };
+//   Trzeba teraz dodać więcej tapet i style przycisku
+
 let itemsNumber = document.querySelector('.klasaTestowa');
 let btn = document.querySelector('button')
 let data = '';
